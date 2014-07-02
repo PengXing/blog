@@ -4,7 +4,7 @@
 
 # Site
 title: sekiyika
-subtitle:
+subtitle: Senior Front-end Developer in Baidu, Inc.
 description:
 author: sekiyika
 email: px.pengxing AT gmail.com
@@ -12,7 +12,7 @@ language:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://162.243.139.14
+url: http://blog.sekiyika.com
 root: /
 permalink: :year/:month/:day/:title/
 tag_dir: tags
