@@ -4,7 +4,7 @@ tags:
  - VPN
  - PPTP
  - Digital-Ocean
-comment: true
+comments: true
 categories:
  - tools
  - vpn

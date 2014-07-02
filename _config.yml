@@ -3,11 +3,11 @@
 ## Source: https://github.com/tommy351/hexo/
 
 # Site
-title: Hexo
+title: sekiyika
 subtitle:
 description:
 author: sekiyika
-email:
+email: px.pengxing AT gmail.com
 language:
 
 # URL
@@ -76,7 +76,7 @@ per_page: 10
 pagination_dir: page
 
 # Disqus
-disqus_shortname:
+disqus_shortname: sekiyika
 
 # Extensions
 ## Plugins: https://github.com/tommy351/hexo/wiki/Plugins
