@@ -1,0 +1,4 @@
+blog
+====
+
+sekiyika's blog
