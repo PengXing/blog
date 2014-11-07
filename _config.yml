@@ -92,3 +92,9 @@ deploy:
 # Sitemap
 sitemap:
   path: sitemap.xml
+
+#feed
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
