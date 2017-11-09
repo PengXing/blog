@@ -63,7 +63,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: yilia
+theme: apollo
 #theme: landscape
 
 # Deployment
@@ -79,35 +79,54 @@ generator_amp:
     path:   sample/sample-logo.png
     width:  600
     height: 60
-  substituteTitleImage: 
+  substituteTitleImage:
     path:   sample/sample-substituteTitleImage.png
     width:  1024
     height: 800
   warningLog: false   # To display warning, please set true.
 
 jsonContent:
-    meta: false
-    pages: false
-    posts:
-         title: true
-         date: true
-         path: true
-         text: false
-         raw: false
-         content: false
-         slug: false
-         updated: false
-         comments: false
-         link: false
-         permalink: false
-         excerpt: false
-         categories: false
-         tags: true
+  meta: false
+  pages: false
+  posts:
+    title: true
+    date: true
+    path: true
+    text: false
+    raw: false
+    content: false
+    slug: false
+    updated: false
+    comments: false
+    link: false
+    permalink: false
+    excerpt: false
+    categories: false
+    tags: true
 
 
 baidu_url_submit:
-    count: 1 ## 提交最新的一个链接
-    host: pengxing.me ## 在百度站长平台中注册的域名
-    token: PMdQ5ANHZG2cHaZP ## 请注意这是您的秘钥， 所以请不要把博客源代码发布在公众仓库里!
-    path: baidu_urls.txt ## 文本文档的地址， 新链接会保存在此文本文档里
+  count: 1 ## 提交最新的一个链接
+  host: pengxing.me ## 在百度站长平台中注册的域名
+  token: PMdQ5ANHZG2cHaZP ## 请注意这是您的秘钥， 所以请不要把博客源代码发布在公众仓库里!
+  path: baidu_urls.txt ## 文本文档的地址， 新链接会保存在此文本文档里
 
+## PWA features
+pwa:
+  # manifest:
+  #   path: /manifest.json
+  serviceWorker:
+    path: /sw.js
+    preload:
+      urls:
+        - /
+      posts: 5
+    opts:
+      networkTimeoutSeconds: 5
+    routes:
+      - pattern: !!js/regexp /.*\.(js|css|jpg|jpeg|png|gif)$/
+        strategy: cacheFirst
+      - pattern: !!js/regexp /hm.baidu.com/
+        strategy: networkOnly
+      - pattern: !!js/regexp /\//
+        strategy: networkFirst
