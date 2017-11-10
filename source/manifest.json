@@ -1,0 +1,20 @@
+{
+  "name": "彭星的博客",
+  "short_name": "pengxing",
+  "start_url": "/?from=homescreen",
+  "display": "standalone",
+  "background_color": "#fff",
+  "description": "彭星的博客 - 百度前端攻城狮",
+  "icons": [
+    {
+      "src": "i/logo-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "i/logo-256x256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    }
+  ]
+}

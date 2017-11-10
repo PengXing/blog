@@ -4,7 +4,7 @@
 
 # Site
 title: pengxing
-subtitle:
+subtitle: 百度前端攻城狮
 description:
 author: pengxing
 language: zh
@@ -73,15 +73,15 @@ deploy:
 
 # The following settings is the quick start options.
 generator_amp:
-  templateDir:  amp-template
+  templateDir: amp-template
   assetDistDir: amp-dist
   logo:
-    path:   sample/sample-logo.png
+    path: sample/sample-logo.png
     width:  600
     height: 60
   substituteTitleImage:
-    path:   sample/sample-substituteTitleImage.png
-    width:  1024
+    path: sample/sample-substituteTitleImage.png
+    width: 1024
     height: 800
   warningLog: false   # To display warning, please set true.
 
@@ -113,8 +113,8 @@ baidu_url_submit:
 
 ## PWA features
 pwa:
-  # manifest:
-  #   path: /manifest.json
+  manifest:
+    path: /manifest.json
   serviceWorker:
     path: /sw.js
     preload:
